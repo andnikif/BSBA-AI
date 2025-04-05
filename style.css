@@ -1,0 +1,143 @@
+/* Basic Reset & Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Example modern font */
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #003865; /* Example NYIT Blue - adjust as needed */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 700; /* Bolder title */
+}
+
+header .status {
+    font-size: 1rem;
+    font-weight: 300; /* Lighter status text */
+    color: #ccc; /* Lighter color for status */
+}
+
+/* Navigation Styling */
+nav {
+    background-color: #e0e0e0; /* Light grey nav bar */
+    padding: 1rem 0;
+    border-bottom: 1px solid #ccc;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /* Horizontal menu */
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent; /* Underline effect on hover */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #005c9a; /* Slightly darker blue on hover */
+    border-bottom: 2px solid #005c9a;
+}
+
+/* Main Content Sections */
+main {
+    padding: 2rem 0;
+}
+
+#hero {
+    background-color: #fff; /* White background for main info */
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+#hero h2 {
+    color: #003865; /* Theme color for headings */
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.1rem;
+    max-width: 700px; /* Limit width for readability */
+    margin: 0 auto 1.5rem auto;
+    color: #555; /* Slightly darker grey text */
+}
+
+#hero hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    width: 60%;
+    margin: 2rem auto; /* Spacing around horizontal rule */
+}
+
+/* Hide placeholder sections used for smooth scrolling */
+.placeholder {
+    height: 0;
+    overflow: hidden;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* Basic Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block; /* Stack nav items vertically */
+        margin: 10px 0;
+    }
+
+    #hero p {
+        font-size: 1rem;
+    }
+}
