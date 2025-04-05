@@ -284,3 +284,82 @@ footer {
         font-size: 1rem;
     }
 }
+/* Styles for Curriculum Page */
+.curriculum-year h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #003865; /* Add underline to year headings */
+    display: inline-block; /* Fit underline to text */
+    margin-left: auto; /* Center the heading block */
+    margin-right: auto;
+    display: block; /* Make it take full width for centering */
+}
+
+/* Use Flexbox or Grid for side-by-side semesters */
+.semester-layout {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem; /* Space between semester columns */
+    justify-content: space-between; /* Space out columns */
+}
+
+.semester {
+    flex: 1; /* Allow semesters to grow */
+    min-width: 250px; /* Minimum width before wrapping */
+    background-color: #fdfdfd; /* Slightly off-white background for semester */
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.semester h4 {
+    color: #005c9a;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.semester ul {
+    list-style: none; /* Remove default bullets */
+    padding-left: 0;
+}
+
+.semester ul li {
+    margin-bottom: 0.6rem;
+    font-size: 0.95rem;
+    color: #444; /* Slightly darker text for courses */
+}
+
+/* Style for the note about bolded courses */
+.highlight-note {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1.5rem;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 600px) {
+    .semester-layout {
+        flex-direction: column; /* Stack semesters vertically */
+        gap: 1.5rem;
+    }
+    .curriculum-year h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* Ensure content-block styling from overview.html is present */
+.content-block {
+    margin-bottom: 2.5rem; /* Increased spacing between years */
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #ddd; /* Slightly darker separator between years */
+}
+
+.content-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
