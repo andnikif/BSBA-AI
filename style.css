@@ -363,3 +363,82 @@ footer {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+/* Add specific styling for individual course detail blocks if needed */
+.course-detail {
+    margin-bottom: 1.5rem; /* Space between course descriptions */
+    padding-left: 10px;
+    border-left: 3px solid #eee; /* Subtle left border */
+}
+
+.course-detail:last-child {
+    margin-bottom: 0; /* Remove bottom margin on the last course detail in a block */
+}
+
+.course-detail h4 {
+    font-size: 1.2rem; /* Slightly smaller than h3 */
+    color: #333; /* Darker color for course titles */
+    margin-bottom: 0.5rem;
+}
+
+.course-detail p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Ensure existing styles are sufficient */
+/* Make sure these styles from previous steps are in your style.css */
+.content-section {
+    background-color: #fff;
+    padding: 2.5rem 0;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section h2 {
+    text-align: center;
+    color: #003865;
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+}
+
+.content-block {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem; /* Adjust padding if needed */
+    border-bottom: 1px solid #ddd;
+}
+
+.content-block:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.content-block h3 {
+    color: #005c9a;
+    margin-bottom: 1.5rem; /* Space below h3 */
+    font-size: 1.4rem;
+}
+
+.content-block ul {
+    list-style: disc; /* Use standard bullets for objectives */
+    margin-left: 20px; /* Indent list */
+    padding-left: 10px;
+}
+
+.content-block ul li {
+    margin-bottom: 0.8rem; /* Space between list items */
+    line-height: 1.5; /* Improve readability */
+}
+
+.content-block ul li strong { /* Style the highlight */
+    color: #003865;
+    font-weight: bold;
+}
+
+/* Active nav link style */
+nav ul li a.active {
+    color: #003865;
+    font-weight: bold;
+    border-bottom: 2px solid #003865;
+}
