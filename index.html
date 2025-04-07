@@ -1,135 +1,57 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proposal: BS in Business AI & Analytics (BS-BAIA)</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            background-color: #003366;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-
-        .status {
-            font-size: 1.1rem;
-            font-weight: 300;
-            margin-top: 0.5rem;
-        }
-
-        main {
-            padding: 2rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .tiles {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .tile {
-            position: relative;
-            overflow: hidden;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            cursor: pointer;
-            transition: transform 0.3s ease;
-        }
-
-        .tile:hover {
-            transform: scale(1.03);
-        }
-
-        .tile img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .tile-content {
-            position: absolute;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            width: 100%;
-            padding: 1rem;
-            box-sizing: border-box;
-        }
-
-        .tile-content h3 {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #eee;
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 500px) {
-            .tile img {
-                height: 150px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Proposal: Bachelor of Science in Business AI & Analytics (BS-BAIA)</h1>
-        <p class="status">Draft Proposal for Review and Feedback</p>
+        <div class="container">
+            <h1>Proposal: Bachelor of Science in Business AI & Analytics (BS-BAIA)</h1>
+            <p class="status">Draft Proposal for Review and Feedback</p>
+        </div>
     </header>
 
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="overview.html">Overview & Rationale</a></li>
+                <li><a href="curriculum.html">Curriculum & Course Map</a></li>
+                <li><a href="details.html">Course Details & Learning Outcomes</a></li>
+                <li><a href="impact.html">Graduate Profile & Career Impact</a></li>
+                <li><a href="next-steps.html">Next Steps & Review</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <section class="tiles">
-            <a href="overview.html" class="tile">
-                <img src="overview.jpg" alt="Overview">
-                <div class="tile-content">
-                    <h3>Overview & Rationale</h3>
-                </div>
-            </a>
-            <a href="curriculum.html" class="tile">
-                <img src="curriculum.jpg" alt="Curriculum">
-                <div class="tile-content">
-                    <h3>Curriculum & Course Map</h3>
-                </div>
-            </a>
-            <a href="details.html" class="tile">
-                <img src="details.jpg" alt="Details">
-                <div class="tile-content">
-                    <h3>Course Details & Learning Outcomes</h3>
-                </div>
-            </a>
-            <a href="impact.html" class="tile">
-                <img src="impact.jpg" alt="Impact">
-                <div class="tile-content">
-                    <h3>Graduate Profile & Career Impact</h3>
-                </div>
-            </a>
-            <a href="next-steps.html" class="tile">
-                <img src="next-steps.jpg" alt="Next Steps">
-                <div class="tile-content">
-                    <h3>Next Steps & Review</h3>
-                </div>
-            </a>
+        <section id="hero">
+            <div class="container">
+                <h2>Program Vision</h2>
+                <p>To cultivate business professionals equipped with strong analytics capabilities and an AI-first mindset, ready to leverage AI for business value and innovation.</p>
+                <hr>
+                <h2>Key Differentiator</h2>
+                <p>Strategically blends foundational business analytics with applied AI applications, ensuring graduates are both market-ready and future-proofed.</p>
+            </div>
         </section>
+
+        <section id="overview" class="placeholder"></section>
+        <section id="curriculum" class="placeholder"></section>
+        <section id="details" class="placeholder"></section>
+        <section id="impact" class="placeholder"></section>
+        <section id="next-steps" class="placeholder"></section>
+
     </main>
 
     <footer>
-        <p>&copy; 2025 NYIT School of Management | Internal Proposal Document</p>
+        <div class="container">
+            <p>&copy; [Year] NYIT School of Management | Internal Proposal Document</p>
+        </div>
     </footer>
+
 </body>
 </html>
